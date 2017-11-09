@@ -41,7 +41,11 @@ def get_prediction():
     logReg = pickle.load(open('logReg.pkl', 'rb'))
 
     # Predict
-    return str(logReg.predict([[param1, param2, param3]]))
+    pred = logReg.predict([[param1, param2, param3]])[0]
+    if pred == 0:
+        return "Transaction is legit"
+    else:
+        return "Transaction is Fraud"
    
 # Main app
 if __name__ == '__main__':
