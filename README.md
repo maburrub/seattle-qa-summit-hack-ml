@@ -91,9 +91,10 @@ ML in a container
 * You should have an ML env template ready in 5 mins
 
 # Clone the repo
-git clone xxx
+git clone https://github.com/maburrub/seattle-qa-summit-hack-ml.git
 
 # Build docker image
+cd Python
 docker build . -t seattle-qa-summit-hack
 
 # Launch container
